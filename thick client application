@@ -1,0 +1,71 @@
+
+Thick Client Application Testing Methodology 
+
+1.Enumeration: Identify language and framework, architecture,intercepting traffic and common functionality probing. 
+2.Client-SideChecks: Memory analysis, fileanalysis, binary analysis and etc
+3.NetworkAttacks: Intercepting traffic,Examining vulnerabilities on external server interactions 
+4.Server-SideAttacks: OWASP Top 10 checks if theapplication is interacting with Web/API server.
+
+
++Setting Up Thick ClientLab: What we need?
+
+	Windows System –It could be a Hardware, VM and Cloud Instance etc.
+	Vulnerable ThickClient Application – DVTA
+	Recommended toolsto have a testing environment:
+	
+		o Burp Suite
+		o Wireshark
+		o Sysinternal Suite
+		o Echo Mirage
+		o Text Editors like Visual Studio Code
+		o Dnspy
+		o DotPeek
+		o .Net Reflector
+		o MSF
+		o Nmap
+		o Sting
+		o CFF Explorer
+		o Powershell Scripts
+		o IDA Pro/Ollydbg
+		o Process Hacker
+
+
++Common Thick ClientVulnerabilities: 
+	-Sensitive DataExposure and Hardcoded Credentials
+	-DLL Hijacking
+	-Improper ErrorHandling
+	-DatabaseInjection
+	-Insecure Storage
+	-Weak Cryptography
+	-Buffer Overflow
+	-Code Execution
+	-Unquoted ServicePath
+	-Improper GUILogics
+	-Insecure FilePermissions
+	-Side ClientLeakage
+	-Exploiting WeakPublic Function in Use
+	-Lack of BinaryHardening Checks
+	-Lack of CodeObfuscation
+	-SensitiveInformation in Application Registry
+	-Common OWASPWeb/API 10 on API/Web requests
+	
+	
+	+ Reverse Engineering withdnSpyInformation Gathering 
+	+ CFF ExplorerTCPViewWireshark
+	+ Compiler Protection Checks– Binscope
+	+ Signature Verification using Sigcheck
+	+ Hardcoded Credentials –String.exe
+	+ Intercepting Traffic +MITM Relay + Burp Suite
+	+ DLL (Dynamic Link Library)Search Order
+		- ApplicationDirectory
+		- Current Directory
+		- System Directory 
+		- 16-bit SystemDirectory
+		- Windows Directory
+		- DirectoriesLocated in Path Env
+	
+	+ DLL Hijacking using Process Monitor and msfvenom
+	+ Sensitive Data Exposure –Registry (via Regshot)
+	+ Improper Error Handling 
+	+ SQL Injection –Authentication Bypass
+
